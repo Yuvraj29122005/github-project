@@ -1,0 +1,276 @@
+/* ── Page ── */
+.aod-page {
+  padding: 0;
+}
+
+.aod-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 4px;
+}
+
+.aod-subtitle {
+  font-size: 13px;
+  color: #888;
+  margin: 0 0 20px;
+}
+
+/* ── Order Meta ── */
+.aod-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.aod-meta-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.aod-order-id {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.aod-badge {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.aod-badge-completed  { background: #dcfce7; color: #16a34a; }
+.aod-badge-pending    { background: #fef3c7; color: #d97706; }
+.aod-badge-processing { background: #dbeafe; color: #2563eb; }
+
+/* Meta row: date + payment */
+.aod-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.aod-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #888;
+}
+
+/* ── Content Layout ── */
+.aod-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* ── Left Main ── */
+.aod-main {
+  flex: 2;
+  background: #fff;
+  border-radius: 10px;
+  padding: 22px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* Items */
+.aod-items {
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 16px;
+  padding-bottom: 6px;
+}
+
+.aod-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.aod-item-row:last-child {
+  border-bottom: none;
+}
+
+.aod-item-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.aod-item-img {
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  background: #f1f3f7;
+  border: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.aod-item-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 4px;
+}
+
+.aod-item-qty {
+  font-size: 12px;
+  color: #888;
+  margin: 0;
+}
+
+.aod-item-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+/* Summary */
+.aod-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.aod-summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.aod-summary-label { color: #777; }
+.aod-summary-val   { color: #333; font-weight: 500; }
+
+.aod-total-row {
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+  margin-top: 4px;
+}
+
+.aod-total-label {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.aod-total-val {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+/* ── Right Sidebar ── */
+.aod-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.aod-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.aod-card-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Customer */
+.aod-customer-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.aod-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #2f6fed;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.aod-customer-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 3px;
+}
+
+.aod-customer-since {
+  font-size: 12px;
+  color: #888;
+  margin: 0;
+}
+
+.aod-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.aod-contact-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  color: #555;
+  margin: 0;
+}
+
+/* Shipping */
+.aod-address {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.aod-address p {
+  font-size: 13px;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Back button */
+.aod-back-btn {
+  margin-top: 16px;
+  background: #2f6fed;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}

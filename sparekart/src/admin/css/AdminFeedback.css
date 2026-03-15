@@ -1,0 +1,162 @@
+/* ── Page ── */
+.af-page {
+  padding: 0;
+}
+
+/* ── Title ── */
+.af-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 24px;
+}
+
+/* ── Stat Cards ── */
+.af-stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.af-stat-card {
+  flex: 1;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 22px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.af-stat-label {
+  font-size: 13px;
+  color: #888;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+.af-stat-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.af-blue {
+  color: #3b82f6;
+}
+
+/* ── Search Bar ── */
+.af-search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 7px;
+  padding: 10px 20px;
+  margin-bottom: 22px;
+}
+
+.af-search-icon {
+  flex-shrink: 0;
+}
+
+.af-search-input {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: #333;
+  width: 100%;
+  background: transparent;
+}
+
+.af-search-input::placeholder {
+  color: #bbb;
+}
+
+/* ── Feedback Grid ── */
+.af-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.af-empty {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 20px;
+}
+
+/* ── Feedback Card ── */
+.af-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* Card Top */
+.af-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+/* Avatar */
+.af-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7180fd 0%, #db8669 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* User Info */
+.af-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.af-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.af-meta {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+/* Message Box */
+.af-message-box {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.af-message-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #555;
+  margin: 0 0 8px;
+}
+
+.af-message-text {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}

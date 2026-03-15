@@ -1,0 +1,190 @@
+/* ── Page Header ── */
+.dash-header {
+  margin-bottom: 18px;
+}
+
+.dash-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 4px;
+}
+
+.dash-sub {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+}
+
+/* ── Stat Cards Row ── */
+.dash-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.stat-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #888;
+  margin: 0;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.stat-sub {
+  font-size: 11px;
+  color: #aaa;
+  margin: 0;
+}
+
+.stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+/* ── Bottom Row ── */
+.dash-bottom {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+/* Shared card style */
+.dash-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 22px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 16px;
+}
+
+/* Low Stock */
+.low-stock-card {
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.low-stock-empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  gap: 8px;
+  padding: 20px 0;
+}
+
+.low-stock-icon {
+  font-size: 36px;
+  color: #2f6fed;
+}
+
+.low-stock-empty p {
+  font-size: 13px;
+  margin: 0;
+  color: #888;
+}
+
+/* Right column */
+.dash-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Order Status */
+.order-status-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-status-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.order-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.order-status-label {
+  font-size: 13px;
+  color: #444;
+}
+
+.order-status-count {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+/* Products by Category */
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.category-label {
+  color: #555;
+}
+
+.category-count {
+  font-weight: 600;
+  color: #1a1a2e;
+}

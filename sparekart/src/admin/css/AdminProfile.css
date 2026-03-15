@@ -1,0 +1,272 @@
+/* ── Page ── */
+.admin-profile-page {
+  padding-top: 4px;
+}
+
+.admin-profile-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 18px;
+  text-align: left;
+}
+
+/* ── Grid Layout ── */
+.admin-profile-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ── LEFT PANEL ── */
+.admin-profile-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 250px;
+}
+
+.admin-profile-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Avatar */
+.admin-avatar-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.admin-profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: linear-gradient(135deg, #7180fd 0%, #db8669 100%);
+  margin-bottom: 8px;
+}
+
+.admin-change-photo-btn {
+  position: absolute;
+  bottom: 8px;
+  right: 50px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #2f6fed;
+  color: white;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.admin-change-photo-btn:hover {
+  background: #1d5cd6;
+}
+
+.admin-profile-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 4px;
+}
+
+.admin-profile-email {
+  font-size: 11px;
+  color: #888;
+  margin: 0 0 10px;
+}
+
+.admin-role-tag {
+  display: inline-block;
+  background: #eef2ff;
+  color: #3b82f6;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+
+/* ── RIGHT PANEL ── */
+.admin-info-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px 32px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  flex: 1;
+}
+
+.admin-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.admin-info-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin: 0;
+}
+
+/* Edit button */
+.admin-edit-btn {
+  background: transparent;
+  color: #2f6fed;
+  border: 1px solid #2f6fed;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.admin-edit-btn:hover {
+  background: #f0f5ff;
+}
+
+/* ── VIEW MODE FIELDS ── */
+.admin-view-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.admin-view-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.admin-field-label {
+  font-size: 11px;
+  color: #aaa;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.admin-field-label.light {
+  color: #666;
+}
+
+.admin-field-box {
+  width: 100%;
+  font-size: 13px;
+  color: #333;
+  padding-left: 20px; /* Aligned visually */
+}
+
+/* ── EDIT MODE FIELDS ── */
+.admin-edit-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.admin-edit-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-input-wrap {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.admin-input-wrap:focus-within {
+  border-color: #2f6fed;
+}
+
+.admin-input-disabled {
+  background: #f8f9fb;
+}
+
+.admin-input-icon {
+  padding: 0 0 0 12px;
+  font-size: 14px;
+  color: #aaa;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-start-icon {
+  align-self: flex-start;
+  margin-top: 11px;
+}
+
+.admin-edit-input {
+  flex: 1;
+  padding: 11px 12px 11px 8px;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: #333;
+  background: transparent;
+  width: 100%;
+}
+
+.admin-textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.admin-edit-input:disabled {
+  color: #aaa;
+  cursor: not-allowed;
+  background: transparent;
+}
+
+
+.admin-input-wrap.wrap-error {
+  border-color: #ef4444;
+}
+
+.admin-field-error {
+  font-size: 11px;
+  color: #ef4444;
+  margin: 0;
+}
+
+/* ── Save / Cancel buttons ── */
+.admin-edit-btn-row {
+  display: flex;
+  justify-content: flex-start; /* Matches screenshot 2 where button is right under */
+  margin-top: 8px;
+}
+
+.admin-save-btn {
+  background: #2f6fed;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.admin-save-btn:hover {
+  background: #1d5cd6;
+}

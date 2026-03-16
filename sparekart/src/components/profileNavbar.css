@@ -1,0 +1,19 @@
+/* Extra styles only for the profile navbar logout button.
+   Main navbar layout (logo, title, spacing) is shared from `layout.css`. */
+
+.logout-btn {
+  background: #ff4b4b;
+  color: white;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.logout-btn:hover {
+  background: #e33a3a;
+}

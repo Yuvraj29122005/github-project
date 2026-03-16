@@ -38,7 +38,7 @@ function Products({ addToCart, cartCount }) {
               <span className="search-icon">🔍</span>
               <input
                 className="filter-input"
-                placeholder="Search products..."
+                placeholder="Search products"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />

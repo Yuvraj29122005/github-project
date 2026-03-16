@@ -12,42 +12,52 @@ function Home({ addToCart, cartCount }) {
     <>
       <Navbar cartCount={cartCount} />
 
-      <div className="hero" style={{ backgroundImage: `url(${homeBg})` }} />
+      {/* ── Hero ── */}
+      <div className="hero">
+        <img src={homeBg} alt="SpareKart" className="hero-img" />
+      </div>
 
-      <div className="home-products">
-        <h3 className="home-products-title">Featured Products</h3>
+      {/* ── Featured Products ── */}
+      <div className="products-section">
+        <h3 className="section-title">Featured Products</h3>
 
-        <div className="product-grid">
+        <div className="products-grid">
           {products.slice(0, 6).map((p) => (
             <div
               key={p.id}
               className="product-card"
               onClick={() => navigate(`/product/${p.id}`)}
             >
-              <img src={p.img} alt={p.name} />
-              <div className="card-body">
-                <h4>{p.name}</h4>
-                <p className="desc">{p.desc}</p>
-                <div className="card-bottom">
-                  <span className="price">₹{p.price}</span>
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      addToCart(p);
-                      alert(`${p.name} added to cart!`);
-                    }}
-                  >
-                    Add
-                  </button>
-                </div>
+              <img src={p.img} alt={p.name} className="product-img" />
+
+              <div className="product-body">
+                <h3>{p.name}</h3>
+                <p>{p.desc}</p>
               </div>
+
+              <div className="product-footer">
+                <span className="price">₹{p.price}</span>
+                <button
+                  className="btn-add"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    addToCart(p);
+                    alert(`${p.name} added to cart!`);
+                  }}
+                >
+                  🛒 Add
+                </button>
+              </div>
+
             </div>
           ))}
         </div>
 
-        <button className="view-btn" onClick={() => navigate("/products")}>
-          View All Products
-        </button>
+        <div className="view-all-row">
+          <button className="btn-view-all" onClick={() => navigate("/products")}>
+            View All Products
+          </button>
+        </div>
       </div>
 
       <Footer />

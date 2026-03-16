@@ -1,0 +1,332 @@
+/* ── Page ── */
+.au-page {
+  padding: 0;
+}
+
+.au-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 22px;
+}
+
+/* ── Stat Cards ── */
+.au-stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.au-stat-card {
+  flex: 1;
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.au-stat-label {
+  font-size: 13px;
+  color: #888;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
+
+.au-stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.au-green { color: #16a34a; }
+.au-red   { color: #dc2626; }
+
+/* ── Controls ── */
+.au-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+/* Search — pill style */
+.au-search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1.5px solid #dde3ed;
+  border-radius: 8px;
+  padding: 7px 14px;
+}
+
+.au-search:focus-within {
+  border-color: #2f6fed;
+}
+
+.au-search input {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: #333;
+  width: 100%;
+  background: transparent;
+}
+
+.au-search input::placeholder {
+  color: #b0b8c9;
+}
+
+/* Filter dropdown button — same height as search */
+.au-filter-wrap {
+  position: relative;
+}
+
+.au-filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: #fff;
+  border: 1.5px solid #dde3ed;
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #444;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: border-color 0.15s;
+}
+
+.au-filter-btn:hover {
+  border-color: #2f6fed;
+}
+
+/* Dropdown */
+.au-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background: #fff;
+  border: 1px solid #e0e7ef;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.au-dropdown-item {
+  padding: 10px 16px;
+  font-size: 13px;
+  color: #444;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.au-dropdown-item:hover {
+  background: #f0f5ff;
+  color: #2f6fed;
+}
+
+.au-dropdown-active {
+  background: #e8f0fe;
+  color: #2f6fed;
+  font-weight: 600;
+}
+
+/* ── Table Card ── */
+.au-table-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.au-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.au-table th {
+  font-size: 11px;
+  font-weight: 700;
+  color: #aaa;
+  text-align: left;
+  padding: 13px 20px;
+  letter-spacing: 0.5px;
+  background: #fafbfd;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.au-table td {
+  padding: 14px 20px;
+  font-size: 13px;
+  color: #333;
+  border-bottom: 1px solid #f5f5f5;
+  vertical-align: middle;
+}
+
+.au-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.au-table tbody tr:hover td {
+  background: #fafbff;
+}
+
+/* User cell */
+.au-user-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Avatar — gradient like image */
+.au-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.au-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+/* Contact */
+.au-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.au-contact-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #555;
+}
+
+/* Status badge */
+.au-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.au-badge-active   { background: #dcfce7; color: #16a34a; }
+.au-badge-inactive { background: #fee2e2; color: #dc2626; }
+.au-badge-blocked  { background: #fee2e2; color: #dc2626; }
+
+/* Action button — shows status text like image */
+.au-action-btn {
+  background: #fff;
+  border: 1px solid #e0e7ef;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.au-action-btn:hover {
+  background: #fee2e2;
+  border-color: #fca5a5;
+  color: #dc2626;
+}
+
+/* Empty */
+.au-empty {
+  text-align: center;
+  padding: 40px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* ── Action Button with dropdown menu ── */
+.au-action-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.au-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid #e0e7ef;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.au-action-btn:hover {
+  background: #f5f7ff;
+  border-color: #2f6fed;
+}
+
+/* Popup menu */
+.au-action-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background: #fff;
+  border: 1px solid #e0e7ef;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  z-index: 200;
+  overflow: hidden;
+  min-width: 150px;
+}
+
+.au-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 13px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.au-menu-block {
+  color: #d97706;
+}
+
+.au-menu-block:hover {
+  background: #fef3c7;
+}
+
+.au-menu-remove {
+  color: #dc2626;
+}
+
+.au-menu-remove:hover {
+  background: #fee2e2;
+}

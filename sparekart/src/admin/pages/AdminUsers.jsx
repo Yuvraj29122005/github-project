@@ -3,8 +3,8 @@ import Adminlayout from "./Adminlayout";
 import "../css/AdminUsers.css";
 
 const defaultUsers = [
-  { id: "U001", name: "John Doe",   email: "john@example.com",  phone: "9876543210", orders: 1, totalSpent: "₹5,498", status: "Active" },
-  { id: "U002", name: "Jane Smith", email: "jane@example.com",  phone: "9876543211", orders: 1, totalSpent: "₹0",     status: "Active" },
+  { id: "U001", name: "Yuvraj ",   email: "yuvraj@example.com",  phone: "9876543210", orders: 1, totalSpent: "₹5,498", status: "Active" },
+  { id: "U002", name: "prince viradiya", email: "prince@example.com",  phone: "9876543211", orders: 1, totalSpent: "₹0",     status: "Active" },
 ];
 
 const filterOptions = ["All Status", "Active", "Inactive", "Blocked"];

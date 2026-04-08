@@ -22,3 +22,28 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Confidential and Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+
+# Keep .env.example if you create one
+!.env.example
+
+# Authentication and Secret Keys
+*.pem
+*.key
+*.cert
+*.pfx
+
+# Testing and Coverage
+coverage/
+.nyc_output/
+
+# Build caches
+.eslintcache
+.vite/

@@ -252,7 +252,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📫 Contact
 
-**Project Author:** [Your Name / Username](https://github.com/your-username)  
-**Project Repository:** [https://github.com/your-username/Sparekart](https://github.com/your-username/Sparekart)
+**Project Author:** Yuvraj Dhadhal()
+**Project Repository:** [https://github.com/Yuvraj29122005/Sparekart](https://github.com/Yuvraj29122005/Sparekart)
 
 <p align="right"><a href="#readme-top">⬆️ Back to Top</a></p>
